@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <rect width="800" height="300" fill="#0c0d0f"/>
+  <text x="400" y="30" fill="#eceae4" font-family="sans-serif" font-size="18" text-anchor="middle">Goldilocks Controlled Reduce — Ping-Pong Carry Overview</text>
+  <text x="50" y="70" fill="#9aabba" font-size="12">ctrl</text>
+  <circle cx="80" cy="100" r="12" fill="none" stroke="#9aabba" stroke-width="2"/>
+  <text x="80" y="105" fill="#eceae4" font-size="10" text-anchor="middle">c</text>
+  <line x1="92" y1="100" x2="140" y2="100" stroke="#9aabba" stroke-width="1"/>
+  <text x="160" y="70" fill="#9aabba" font-size="12">a0</text>
+  <circle cx="180" cy="100" r="14" fill="none" stroke="#9aabba" stroke-width="2"/>
+  <text x="180" y="105" fill="#eceae4" font-size="10" text-anchor="middle">a0</text>
+  <text x="250" y="70" fill="#9aabba" font-size="12">Data register x[0..63]</text>
+  <circle cx="300" cy="100" r="6" fill="#9aabba"/>
+  <circle cx="320" cy="100" r="6" fill="#9aabba"/>
+  <circle cx="340" cy="100" r="6" fill="#9aabba"/>
+  <text x="360" y="105" fill="#9aabba" font-size="12">...</text>
+  <circle cx="420" cy="100" r="6" fill="#9aabba"/>
+  <circle cx="440" cy="100" r="6" fill="#9aabba"/>
+  <circle cx="460" cy="100" r="6" fill="#9aabba"/>
+  <text x="500" y="70" fill="#9aabba" font-size="12">a1</text>
+  <circle cx="540" cy="100" r="14" fill="none" stroke="#9aabba" stroke-width="2"/>
+  <text x="540" y="105" fill="#eceae4" font-size="10" text-anchor="middle">a1</text>
+  <path d="M180 114 Q360 180 540 114" fill="none" stroke="#9aabba" stroke-width="1" stroke-dasharray="4"/>
+  <path d="M540 86 Q360 20 180 86" fill="none" stroke="#9aabba" stroke-width="1" stroke-dasharray="4"/>
+  <text x="360" y="160" fill="#eceae4" font-size="11" text-anchor="middle">Ping-pong carry (a0 ↔ a1)</text>
+  <text x="400" y="220" fill="#9aabba" font-size="12" text-anchor="middle">Lower 32: add 1 + carry | Upper 32: add carry | Reverse uncomputes</text>
+  <text x="400" y="250" fill="#9aabba" font-size="11" text-anchor="middle">2 ancillae • 128 Toffoli • 128 CNOT • 192 X • depth 128</text>
+</svg>
